@@ -20,6 +20,11 @@ set jobs 8
 
 # parse arguments
 for { set i 0 } { $i < $argc } { incr i } {
+  # proj name
+  if { [lindex $argv $i] == "-proj_name" } {
+    incr i
+    set proj_name [lindex $argv $i]
+  }
   # jobs
   if { [lindex $argv $i] == "-jobs" } {
     incr i

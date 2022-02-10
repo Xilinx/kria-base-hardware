@@ -4,6 +4,7 @@
 RM = rm -rf
 VIVADO = $(XILINX_VIVADO)/bin/vivado
 JOBS ?= 8
+PROJ_NAME ?= k26_base_starter_kit
 
 VIV_PRJ_DIR = project
 VIV_SCRIPTS_DIR = scripts
@@ -24,7 +25,7 @@ all: xsa
 
 xsa: $(VIV_XSA)
 $(VIV_XSA): $(VIV_SRC)
-	$(VIVADO) -mode batch -notrace -source $(VIV_SRC) -tclargs -jobs $(JOBS)
+	$(VIVADO) -mode batch -notrace -source $(VIV_SRC) -tclargs -jobs $(JOBS) -proj_name $(PROJ_NAME)
 
 .PHONY: clean
 clean:
