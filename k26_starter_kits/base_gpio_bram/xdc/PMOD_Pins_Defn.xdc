@@ -1,3 +1,6 @@
+# (C) Copyright 2020 - 2021 Xilinx, Inc.
+# SPDX-License-Identifier: Apache-2.0
+
 set_property PACKAGE_PIN H12 [get_ports {som240_1_connector_bank45_gpio_tri_io[7]}]
 set_property PACKAGE_PIN E10 [get_ports {som240_1_connector_bank45_gpio_tri_io[6]}]
 set_property PACKAGE_PIN D10 [get_ports {som240_1_connector_bank45_gpio_tri_io[5]}]

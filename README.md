@@ -1,5 +1,4 @@
-# kria_hw_kits
-Kria Base HW Projects
+Kria SOM Base HW Projects
 
 To generate an XSA for starter kits
 1. cd to <part_name>_starter_kits/<starter_kit_name>
@@ -8,3 +7,7 @@ To generate an XSA for starter kits
    Note you can also pass arguments to the make command
 	make xsa JOBS=<num> PROJ_NAME=<proj_name>
 
+# License
+
+(C) Copyright 2020 - 2021 Xilinx, Inc.\
+SPDX-License-Identifier: Apache-2.0
