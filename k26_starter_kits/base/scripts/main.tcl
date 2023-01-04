@@ -1,9 +1,6 @@
-# (C) Copyright 2020 - 2021 Xilinx, Inc.
+# Copyright (C) 2022, Xilinx, Inc. 
+# Copyright (C) 2022, Advanced Micro Devices, Inc.
 # SPDX-License-Identifier: Apache-2.0
-
-#Set Board Preset 
-set_param board.repoPaths {../../vivado_board_repo/kr260_carrier/1.0 ../../vivado_board_repo/kr260_som/1.0}
-       
       
 set proj_name k26_base_starter_kit
 set proj_dir ./project

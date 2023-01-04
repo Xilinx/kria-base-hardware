@@ -1,4 +1,5 @@
-# (C) Copyright 2020 - 2021 Xilinx, Inc.
+# Copyright (C) 2022, Xilinx, Inc. 
+# Copyright (C) 2022-2023, Advanced Micro Devices, Inc.
 # SPDX-License-Identifier: Apache-2.0
 
 ##################################################################
@@ -57,11 +58,6 @@ set zynq_ultra_ps_e_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_p
  apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1"} [get_bd_cells zynq_ultra_ps_e_0] 
 
 set_property -dict [ list \
-CONFIG.PSU__CRF_APB__DPLL_FRAC_CFG__ENABLED  {1} \
-CONFIG.PSU__CRF_APB__VPLL_FRAC_CFG__ENABLED  {1} \
-CONFIG.PSU__CRL_APB__USB3__ENABLE {1} \
-CONFIG.PSU__FPGA_PL0_ENABLE {1} \
-CONFIG.PSU__NUM_FABRIC_RESETS {4} \
 CONFIG.PSU__TTC0__WAVEOUT__ENABLE {1} \
 CONFIG.PSU__TTC0__WAVEOUT__IO {EMIO} \
 CONFIG.PSU__USE__M_AXI_GP0  {0} \
