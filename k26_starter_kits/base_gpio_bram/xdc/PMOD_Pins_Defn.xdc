@@ -1,4 +1,5 @@
-# (C) Copyright 2020 - 2021 Xilinx, Inc.
+# Copyright (C) 2022, Xilinx, Inc. 
+# Copyright (C) 2022, Advanced Micro Devices, Inc.
 # SPDX-License-Identifier: Apache-2.0
 
 set_property PACKAGE_PIN H12 [get_ports {som240_1_connector_bank45_gpio_tri_io[7]}]

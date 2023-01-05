@@ -1,4 +1,5 @@
-# (C) Copyright 2020 - 2021 Xilinx, Inc.
+# Copyright (C) 2022, Xilinx, Inc.
+# Copyright (C) 2022-2023, Advanced Micro Devices, Inc.
 # SPDX-License-Identifier: Apache-2.0
 
 ##################################################################
@@ -47,14 +48,9 @@ proc create_root_design { parentCell } {
   apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1"} [get_bd_cells zynq_ultra_ps_e_0] 
   
   set_property -dict [ list \
-  CONFIG.PSU__SD0__PERIPHERAL__IO {MIO 13 .. 16 21 22} \
-  CONFIG.PSU__GPIO1_MIO__PERIPHERAL__ENABLE {0} \
-  CONFIG.PSU__FPGA_PL0_ENABLE {1} \
-  CONFIG.PSU__NUM_FABRIC_RESETS {1} \
   CONFIG.PSU__UART1__BAUD_RATE {115200} \
   CONFIG.PSU__UART1__PERIPHERAL__ENABLE {1} \
   CONFIG.PSU__UART1__PERIPHERAL__IO {MIO 36 .. 37} \
-  CONFIG.PSU__USE__IRQ0 {1} \
   CONFIG.PSU__USE__M_AXI_GP0  {0} \
   CONFIG.PSU__USE__M_AXI_GP1  {0} \
   CONFIG.PSU__USE__M_AXI_GP2  {0} \
