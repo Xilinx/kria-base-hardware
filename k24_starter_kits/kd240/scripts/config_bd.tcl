@@ -74,6 +74,10 @@ set_property -dict [ list \
   CONFIG.PSU__USE__S_AXI_GP5  {0} \
   CONFIG.PSU__USE__S_AXI_GP6  {0} \
   CONFIG.PSU__GPIO2_MIO__PERIPHERAL__ENABLE {1} \
+  CONFIG.PSU_MIO_45_PULLUPDOWN {disable} \
+  CONFIG.PSU_MIO_46_PULLUPDOWN {disable} \
+  CONFIG.PSU_MIO_47_PULLUPDOWN {disable} \
+  CONFIG.PSU_MIO_48_PULLUPDOWN {disable} \
 ] [get_bd_cells zynq_ultra_ps_e_0] 
 
 # Create port connections
