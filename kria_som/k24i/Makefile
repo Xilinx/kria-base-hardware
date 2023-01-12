@@ -4,7 +4,7 @@
 RM = rm -rf
 VIVADO = $(XILINX_VIVADO)/bin/vivado
 JOBS ?= 8
-PROJ_NAME ?= k24_som
+PROJ_NAME ?= k24i_som
 
 VIV_PRJ_DIR = project
 VIV_SCRIPTS_DIR = scripts

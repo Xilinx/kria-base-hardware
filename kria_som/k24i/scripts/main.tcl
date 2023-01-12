@@ -5,7 +5,7 @@
 set_param board.repoPaths {../../vivado_board_repo/k24i/1.0}
        
       
-set proj_name k24_som
+set proj_name k24i_som
 set proj_dir ./project
 set proj_board [get_board_parts "*:k24i:*" -latest_file_version]
 set bd_tcl_dir ./scripts
