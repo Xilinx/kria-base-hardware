@@ -2,14 +2,14 @@
 # SPDX-License-Identifier: Apache-2.0
 
 #Set Board Preset 
-set_param board.repoPaths {../../vivado_board_repo/kd240_carrier/1.0 ../../vivado_board_repo/kd240_som/1.0 ../../vivado_board_repo/k24i/1.0}
+set_param board.repoPaths {../../vivado_board_repo/kd240_carrier/1.0 ../../vivado_board_repo/kd240_som/1.0 ../../vivado_board_repo/k24c/1.0}
        
       
 set proj_name k24_base_starter_kit
 set proj_dir ./project
-set proj_board [get_board_parts "*:k24i:*" -latest_file_version]
+set proj_board [get_board_parts "*:k24c:*" -latest_file_version]
 set bd_tcl_dir ./scripts
-set board k24i
+set board k24c
 set device k24
 set rev None
 set output {xsa}
