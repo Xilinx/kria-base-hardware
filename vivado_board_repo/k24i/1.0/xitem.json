@@ -9,7 +9,7 @@
           "description": "Kria K24I SOM", 
           "company": "xilinx.com", 
           "company_display": "Xilinx", 
-          "author": "skemidi", 
+          "author": "ashishd", 
           "contributors": [
             {
               "group": "Xilinx", 
@@ -17,7 +17,7 @@
             }
           ], 
           "category": "System On Modules(SOM)",
-          "logo": "k26i_board.jpeg",
+          "logo": "k24i_board.jpeg",
           "website": "www.xilinx.com/SOM", 
           "search-keywords": [
             "SOM", 
