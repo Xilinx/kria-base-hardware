@@ -1,7 +1,7 @@
 <h1 align="center">KRIA SOM BASE HARDWARE DESGIN</h1>
 
 ## Introduction
-This repository contains the Kria SOM base hardware projects. It contains varous tcl file which can be used to generate XSA for the required starter kit.
+This repository contains the Kria SOM base hardware projects. It contains various tcl files which can be used to generate XSA for the required starter kit.
 
 
 ## To generate an XSA for starter kits
