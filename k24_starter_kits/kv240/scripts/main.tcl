@@ -68,6 +68,13 @@ save_bd_design
 validate_bd_design
 generate_target all [get_files $proj_dir/${proj_name}.srcs/sources_1/bd/$proj_name/${proj_name}.bd]
 
+# Work around to enable external termination with DDR ECC disabled
+set_property CONFIG.PSU__DDRC__ECC {Enabled} [get_bd_cells zynq_ultra_ps_e_0]
+generate_target all [get_files $proj_dir/${proj_name}.srcs/sources_1/bd/$proj_name/${proj_name}.bd]
+set_property CONFIG.PSU__DDRC__ECC {Disabled} [get_bd_cells zynq_ultra_ps_e_0]
+generate_target all [get_files $proj_dir/${proj_name}.srcs/sources_1/bd/$proj_name/${proj_name}.bd]
+#
+
 
 set fd [open $proj_dir/README.hw w]
 
