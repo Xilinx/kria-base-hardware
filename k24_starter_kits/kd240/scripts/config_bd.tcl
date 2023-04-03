@@ -78,6 +78,9 @@ set_property -dict [ list \
   CONFIG.PSU_MIO_46_PULLUPDOWN {disable} \
   CONFIG.PSU_MIO_47_PULLUPDOWN {disable} \
   CONFIG.PSU_MIO_48_PULLUPDOWN {disable} \
+  CONFIG.PSU__DISPLAYPORT__PERIPHERAL__ENABLE {1} \
+  CONFIG.PSU__DPAUX__PERIPHERAL__IO {MIO 27 .. 30} \
+  CONFIG.PSU__DP__LANE_SEL {None} \
 ] [get_bd_cells zynq_ultra_ps_e_0] 
 
 # Create port connections
