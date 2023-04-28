@@ -56,10 +56,10 @@
 				<user_parameter name="CONFIG.PSU__CRL_APB__UART1_REF_CTRL__SRCSEL" value="IOPLL"/>
 				<user_parameter name="CONFIG.PSU__CRL_APB__UART1_REF_CTRL__FREQMHZ" value="100"/>
 		
-				<!-- <user_parameter name="CONFIG.PSU__DISPLAYPORT__PERIPHERAL__ENABLE" value="1"/> -->
+				<user_parameter name="CONFIG.PSU__DISPLAYPORT__PERIPHERAL__ENABLE" value="1"/>
 				<!-- <user_parameter name="CONFIG.PSU__DPAUX__PERIPHERAL__ENABLE" value="1"/> -->
-				<!-- <user_parameter name="CONFIG.PSU__DPAUX__PERIPHERAL__IO" value="MIO 27 .. 30"/> -->
-				<!-- <user_parameter name="CONFIG.PSU__DP__LANE_SEL" value="None"/> -->
+				<user_parameter name="CONFIG.PSU__DPAUX__PERIPHERAL__IO" value="MIO 27 .. 30"/>
+				<user_parameter name="CONFIG.PSU__DP__LANE_SEL" value="None"/>
 	
 	<!-- 		<user_parameter name="CONFIG.PSU__DP__LANE_SEL" value="Single Lower"/>
 				<user_parameter name="CONFIG.PSU__DISPLAYPORT__LANE0__ENABLE" value="1"/>
@@ -369,8 +369,8 @@
 
 				<user_parameter name="CONFIG.PSU__PMU__GPO0__ENABLE" value="1"/>
 				<user_parameter name="CONFIG.PSU__PMU__GPO1__ENABLE" value="1"/>
-				<user_parameter name="CONFIG.PSU__PMU__GPO2__ENABLE" value="1"/>
-				<user_parameter name="CONFIG.PSU__PMU__GPO2__POLARITY" value="high"/>
+				<user_parameter name="CONFIG.PSU__PMU__GPO2__ENABLE" value="0"/>
+				<!-- <user_parameter name="CONFIG.PSU__PMU__GPO2__POLARITY" value="high"/> -->
 				<user_parameter name="CONFIG.PSU__PMU__PERIPHERAL__ENABLE" value="1"/>		
 	
 				<!-- <user_parameter name="CONFIG.PSU__DP__REF_CLK_FREQ" value="27"/> -->
