@@ -73,9 +73,6 @@ CONFIG.PSU__USE__S_AXI_GP3  {0} \
 CONFIG.PSU__USE__S_AXI_GP4  {0} \
 CONFIG.PSU__USE__S_AXI_GP5  {0} \
 CONFIG.PSU__USE__S_AXI_GP6  {0} \
-CONFIG.PSU__DISPLAYPORT__PERIPHERAL__ENABLE {1} \
-CONFIG.PSU__DPAUX__PERIPHERAL__IO {MIO 27 .. 30} \
-CONFIG.PSU__DP__LANE_SEL {None} \
 ] [get_bd_cells zynq_ultra_ps_e_0] 
 
 # Create port connections
