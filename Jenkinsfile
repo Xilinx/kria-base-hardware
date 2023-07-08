@@ -233,6 +233,127 @@ pipeline {
                         }
                     }
                 }
+                stage('kria_som/k24c') {
+                    environment {
+                        design="kria_som/k24c"
+                        work_dir="${ws}/build/${design}"
+                        PAEG_LSF_MEM=65536
+                        PAEG_LSF_QUEUE="long"
+                    }
+                    when {
+                        anyOf {
+                            changeset "**/kria_som/k24c/**"
+                            triggeredBy 'TimerTrigger'
+                            triggeredBy 'UserIdCause'
+                        }
+                    }
+                    steps {
+                        createWorkDir()
+                        buildDesign()
+                    }
+                    post {
+                        success {
+                            deployDesign()
+                        }
+                    }
+                }
+                stage('kria_som/k24i') {
+                    environment {
+                        design="kria_som/k24i"
+                        work_dir="${ws}/build/${design}"
+                        PAEG_LSF_MEM=65536
+                        PAEG_LSF_QUEUE="long"
+                    }
+                    when {
+                        anyOf {
+                            changeset "**/kria_som/k24i/**"
+                            triggeredBy 'TimerTrigger'
+                            triggeredBy 'UserIdCause'
+                        }
+                    }
+                    steps {
+                        createWorkDir()
+                        buildDesign()
+                    }
+                    post {
+                        success {
+                            deployDesign()
+                        }
+                    }
+                }
+                stage('k24_starter_kits/base') {
+                    environment {
+                        design="k24_starter_kits/base"
+                        work_dir="${ws}/build/${design}"
+                        PAEG_LSF_MEM=65536
+                        PAEG_LSF_QUEUE="long"
+                    }
+                    when {
+                        anyOf {
+                            changeset "**/k24_starter_kits/base/**"
+                            triggeredBy 'TimerTrigger'
+                            triggeredBy 'UserIdCause'
+                        }
+                    }
+                    steps {
+                        createWorkDir()
+                        buildDesign()
+                    }
+                    post {
+                        success {
+                            deployDesign()
+                        }
+                    }
+                }
+                stage('k24_starter_kits/kd240') {
+                    environment {
+                        design="k24_starter_kits/kd240"
+                        work_dir="${ws}/build/${design}"
+                        PAEG_LSF_MEM=65536
+                        PAEG_LSF_QUEUE="long"
+                    }
+                    when {
+                        anyOf {
+                            changeset "**/k24_starter_kits/kd240/**"
+                            triggeredBy 'TimerTrigger'
+                            triggeredBy 'UserIdCause'
+                        }
+                    }
+                    steps {
+                        createWorkDir()
+                        buildDesign()
+                    }
+                    post {
+                        success {
+                            deployDesign()
+                        }
+                    }
+                }
+                stage('k24_starter_kits/kv240') {
+                    environment {
+                        design="k24_starter_kits/kv240"
+                        work_dir="${ws}/build/${design}"
+                        PAEG_LSF_MEM=65536
+                        PAEG_LSF_QUEUE="long"
+                    }
+                    when {
+                        anyOf {
+                            changeset "**/k24_starter_kits/kv240/**"
+                            triggeredBy 'TimerTrigger'
+                            triggeredBy 'UserIdCause'
+                        }
+                    }
+                    steps {
+                        createWorkDir()
+                        buildDesign()
+                    }
+                    post {
+                        success {
+                            deployDesign()
+                        }
+                    }
+                }
+            
             }
         }
     }
