@@ -328,32 +328,7 @@ pipeline {
                             deployDesign()
                         }
                     }
-                }
-                stage('k24_starter_kits/kv240') {
-                    environment {
-                        design="k24_starter_kits/kv240"
-                        work_dir="${ws}/build/${design}"
-                        PAEG_LSF_MEM=65536
-                        PAEG_LSF_QUEUE="long"
-                    }
-                    when {
-                        anyOf {
-                            changeset "**/k24_starter_kits/kv240/**"
-                            triggeredBy 'TimerTrigger'
-                            triggeredBy 'UserIdCause'
-                        }
-                    }
-                    steps {
-                        createWorkDir()
-                        buildDesign()
-                    }
-                    post {
-                        success {
-                            deployDesign()
-                        }
-                    }
-                }
-            
+                }                           
             }
         }
     }
